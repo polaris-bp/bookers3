@@ -1,0 +1,21 @@
+<h2>User info</h2>
+<table class='table'>
+<%= attachment_image_tag @user, :profile_image, :fill, 120, 120, format: 'jpeg', fallback: "no_image.jpg" %>
+<!--<tr><img class="attachment user profile_image fallback" src="/assets/no_image-ede28af4bad96368ef41be1b4be1cffce0d9402540f75d17895e32cb0d2af5e6.jpg" /></tr>-->
+<tr>
+  <th>name</th>
+  <th><%= @user.name %></th>
+</tr>
+<tr>
+  <th>introduction</th>
+  <th><%= @user.introduction %></th>
+  <th></th>
+</tr>
+</table>
+<div class='row'>
+  <%# if @user == current_user %>
+    <th><%= link_to '', edit_user_path(@user), class: 'btn btn-outline-secondary btn-block fas fa-user-cog edit_user_25979' %></th>
+  <%# else %>
+    <!--<th><%#= link_to 'Edit', books_path, class: 'btn btn-outline-secondary btn-block fas fa-user-cog edit_user_25979' %></th>-->
+  <%# end %>
+</div>
