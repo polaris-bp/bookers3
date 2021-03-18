@@ -1,7 +1,7 @@
 <h2 class="mt-3">New book</h2>
   <%= form_with model:@new_book, local:true do |f| %>
-    <% @obj = @new_book %>
-    <%= render 'shared/error_messages' %>
+
+    <%= render 'shared/error_messages', model: @new_book %>
     <p>
       <%= f.label :title %><br>
       <%= f.text_field :title, class:'form-control' %>

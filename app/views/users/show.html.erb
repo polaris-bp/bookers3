@@ -27,8 +27,7 @@
           <td><%=link_to book.title, book_path(book) %></td>
           <td><%= book.body %></td>
 
-          <% @obj = book %>
-          <%= render 'shared/favorite' %>
+          <%= render 'shared/favorite', model: book %>
           <td>コメント件数：<%= book.book_comments.count %></td>
           <!--<td><%#= link_to 'Show', book_path(book)%></td>-->
         </tr>

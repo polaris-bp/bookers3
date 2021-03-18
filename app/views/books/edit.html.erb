@@ -2,7 +2,7 @@
 <h1>Editing Book</h1>
 <%= form_with model:@book, local: true do |f| %>
   <% @obj = @book %>
-  <%= render 'shared/error_messages' %>
+  <%= render 'shared/error_messages', model: @book %>
 
   <p>
     <%= f.label :title %><br>

@@ -1,7 +1,7 @@
 <h1>New Post</h1>
 <!-- form_with部分 -->
 <%= form_with model:@book, local:true do |f| %>
-  <%= render 'shared/error_messages' %>
+  <%= render 'shared/error_messages', model: @book %>
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title, class:'form-control' %>
