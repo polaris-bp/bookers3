@@ -13821,3 +13821,161 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.5ms)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."book_id" = ?[0m  [["book_id", 1]]
   [1m[35m (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.306152', '2021-04-25 11:22:21.306152', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.306152', '2021-04-25 11:22:21.306152', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.307872', '2021-04-25 11:22:21.307872', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.307872', '2021-04-25 11:22:21.307872', 298486374)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (1.4ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.511430', '2021-04-25 11:22:21.511430', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.511430', '2021-04-25 11:22:21.511430', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.512003', '2021-04-25 11:22:21.512003', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.512003', '2021-04-25 11:22:21.512003', 298486374)[0m
+  [1m[35m (2.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (1.6ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.528411', '2021-04-25 11:22:21.528411', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.528411', '2021-04-25 11:22:21.528411', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.528826', '2021-04-25 11:22:21.528826', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.528826', '2021-04-25 11:22:21.528826', 298486374)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.548181', '2021-04-25 11:22:21.548181', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.548181', '2021-04-25 11:22:21.548181', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.548584', '2021-04-25 11:22:21.548584', 980190962)[0m
+  [1m[36mFixture Insert (3.7ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.548584', '2021-04-25 11:22:21.548584', 298486374)[0m
+  [1m[35m (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.564452', '2021-04-25 11:22:21.564452', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.564452', '2021-04-25 11:22:21.564452', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.564876', '2021-04-25 11:22:21.564876', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.564876', '2021-04-25 11:22:21.564876', 298486374)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.585155', '2021-04-25 11:22:21.585155', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:22:21.585155', '2021-04-25 11:22:21.585155', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.588029', '2021-04-25 11:22:21.588029', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:22:21.588029', '2021-04-25 11:22:21.588029', 298486374)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (1.7ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.229988', '2021-04-25 11:23:58.229988', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.229988', '2021-04-25 11:23:58.229988', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.231565', '2021-04-25 11:23:58.231565', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.231565', '2021-04-25 11:23:58.231565', 298486374)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (1.5ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (2.0ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.286861', '2021-04-25 11:23:58.286861', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.286861', '2021-04-25 11:23:58.286861', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.287393', '2021-04-25 11:23:58.287393', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.287393', '2021-04-25 11:23:58.287393', 298486374)[0m
+  [1m[35m (1.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.305059', '2021-04-25 11:23:58.305059', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.305059', '2021-04-25 11:23:58.305059', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.307669', '2021-04-25 11:23:58.307669', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.307669', '2021-04-25 11:23:58.307669', 298486374)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (2.2ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.321087', '2021-04-25 11:23:58.321087', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.321087', '2021-04-25 11:23:58.321087', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.323780', '2021-04-25 11:23:58.323780', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.323780', '2021-04-25 11:23:58.323780', 298486374)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (1.8ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.337092', '2021-04-25 11:23:58.337092', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.337092', '2021-04-25 11:23:58.337092', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.339828', '2021-04-25 11:23:58.339828', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.339828', '2021-04-25 11:23:58.339828', 298486374)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "books"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "favorites"[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "book_comments"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.352865', '2021-04-25 11:23:58.352865', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2021-04-25 11:23:58.352865', '2021-04-25 11:23:58.352865', 298486374)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.353250', '2021-04-25 11:23:58.353250', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2021-04-25 11:23:58.353250', '2021-04-25 11:23:58.353250', 298486374)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m

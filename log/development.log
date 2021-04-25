@@ -1591,3 +1591,23 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 192ms (Views: 186.7ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for 60.139.125.194 at 2021-04-25 11:26:48 +0000
+Cannot render console from 60.139.125.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#home as HTML
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (1.8ms)
+  Rendered shared/_flash.html.erb (0.4ms)
+Completed 200 OK in 588ms (Views: 578.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 60.139.125.194 at 2021-04-25 11:27:05 +0000
+Cannot render console from 60.139.125.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#home as HTML
+  Rendering homes/home.html.erb within layouts/application
+  Rendered homes/home.html.erb within layouts/application (1.0ms)
+  Rendered shared/_flash.html.erb (0.4ms)
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
