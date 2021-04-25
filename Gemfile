@@ -37,7 +37,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   # Use sqlite3 as the database for Active Record
-  # gem 'sqlite3'
+  gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -58,7 +58,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.17.1'
+  gem 'pg'
   gem 'rails_12factor', '0.0.2'
 end
 
