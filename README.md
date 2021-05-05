@@ -1,27 +1,17 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-Deployed to Heroku
+# Bookers
+本の感想を共有するためのウェブアプリです。サイトです。
+# URL
 https://stark-plateau-91064.herokuapp.com/
+初回はサインアップ画面でメールアドレスとパスワードの入力して登録する必要があります．
+初回以降は名前とパスワードでログインできます。
+
+# 使用技術
+- Ruby 2.6.3p62
+- Rails 6.1.3.1
+
+# 機能一覧
+- ユーザー登録、ログイン機能
+- ユーザプロフィール編集機能
+- 投稿機能
+- いいね機能
+- コメント機能
