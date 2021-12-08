@@ -6,7 +6,7 @@ https://stark-plateau-91064.herokuapp.com/ <br>
 初回以降は名前とパスワードでログインできます。
 
 # 使用技術
-- Ruby 2.6.3p62
+- Ruby 2.6.3.2
 - Rails 6.1.3.1
 
 # 機能一覧
